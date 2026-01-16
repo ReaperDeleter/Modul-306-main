@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Sticky Board – ToDo Liste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="page-title">🗒️ Sticky Board – ToDo Liste</h1>
+
+<div class="layout">
+    <div class="left">
+        <button id="addNoteBtn">Sticky hinzufügen</button>
+        <div id="board" class="board"></div>
+    </div>
+
+    <div class="right">
+        <h2>Änderungsprotokoll</h2>
+        <ul id="log" class="log"></ul>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+        <h2>Sticky bearbeiten</h2>
+
+        <label>Titel</label>
+        <input type="text" id="modalTitle" placeholder="Titel eingeben">
+
+        <label>Beschreibung</label>
+        <textarea id="modalDescription" placeholder="Beschreibung eingeben"></textarea>
+
+        <label>Fälligkeitsdatum</label>
+        <input type="date" id="modalDueDate">
+
+        <label>Wichtigkeit</label>
+        <select id="modalPriority">
+            <option value="low">Einfach</option>
+            <option value="medium">Mittel</option>
+            <option value="high">Schwer</option>
+        </select>
+
+        <div class="modal-buttons">
+            <button id="saveBtn">Speichern</button>
+            <button id="deleteBtn" class="danger">Löschen</button>
+            <button id="cancelBtn">Abbrechen</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

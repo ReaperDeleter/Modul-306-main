@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.page-title {
+    margin-bottom: 15px;
+}
+
+/* Layout */
+.layout {
+    display: flex;
+    gap: 20px;
+}
+
+.left {
+    flex: 3;
+}
+
+.right {
+    flex: 1;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+/* Board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Sticky Note */
+.note {
+    background: #fffb8f;
+    padding: 15px;
+    height: 160px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    position: relative;
+}
+
+.note h3 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.note .due-date {
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+/* Wichtigkeits-Punkt */
+.priority-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.low { background: green; }
+.medium { background: gold; }
+.high { background: red; }
+
+/* Log */
+.log {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+.log li {
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 320px;
+    border-radius: 8px;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.danger {
+    background: #d9534f;
+    color: white;
+}
