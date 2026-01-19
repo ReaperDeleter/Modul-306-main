@@ -8,7 +8,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* Layout */
 .layout {
     display: flex;
     gap: 20px;
@@ -28,7 +27,6 @@ body {
     overflow-y: auto;
 }
 
-/* Board */
 .board {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -36,7 +34,6 @@ body {
     margin-top: 15px;
 }
 
-/* Sticky Note */
 .note {
     background: #fffb8f;
     padding: 15px;
@@ -57,7 +54,6 @@ body {
     margin-top: 10px;
 }
 
-/* Wichtigkeits-Punkt */
 .priority-dot {
     width: 12px;
     height: 12px;
@@ -71,7 +67,7 @@ body {
 .medium { background: gold; }
 .high { background: red; }
 
-/* Log */
+
 .log {
     list-style: none;
     padding: 0;
